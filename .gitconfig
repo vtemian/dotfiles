@@ -1,34 +1,34 @@
-[alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-
-[merge]
-  conflictstyle = diff3
-
 [user]
-	name = vtemian
-	email = vladtemian@gmail.com
+  email = vladtemian@gmail.com
+  name = Vlad Temian
+
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [color]
   branch = auto
   diff = auto
   status = auto
-
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
-
 [color "diff"]
   meta = yellow bold
-  frag = cyan bold
+  frag = magenta bold
   old = red bold
-  new = green
-
+  new = green bold
 [color "status"]
-  added = green
-  changed = red
-  untracked = yellow
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[core]
+  quotepath = false
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[push]
+	default = matching
