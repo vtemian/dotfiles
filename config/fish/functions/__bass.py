@@ -1,0 +1,1 @@
+/home/w/.config/fisherman/bass/functions/__bass.py
